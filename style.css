@@ -121,3 +121,33 @@ body{
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
+
+@media screen and (max-width: 450px) {
+    .search input {
+        width: 100%;              /* Make the search input take full width */
+        font-size: 14px;          /* Smaller font size for compact screens */
+        padding: 8px;             /* Adjust padding for mobile */
+    }
+
+    .search button {
+        width: 50px;              /* Smaller button size */
+        height: 50px;             /* Adjust height for small screens */
+    }
+
+    .weather h1 {
+        font-size: 40px;          /* Smaller temperature display */
+    }
+
+    .weather h2 {
+        font-size: 22px;          /* Smaller city name */
+    }
+
+    .details {
+        flex-direction: column;   /* Stack the details vertically */
+        gap: 10px;                /* Add spacing between elements */
+    }
+
+    .col {
+        text-align: center;       /* Center align items for better mobile view */
+    }
+}
